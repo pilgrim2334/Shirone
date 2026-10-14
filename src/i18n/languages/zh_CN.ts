@@ -146,6 +146,7 @@ export const zh_CN: Translation = {
 
 	[Key.tags]: "标签",
 	[Key.categories]: "分类",
+	[Key.labNotes]: "实验专区",
 	[Key.series]: "系列",
 	[Key.seriesCount]: "个系列",
 	[Key.seriesCounts]: "个系列",

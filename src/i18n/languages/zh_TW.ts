@@ -146,6 +146,7 @@ export const zh_TW: Translation = {
 
 	[Key.tags]: "標籤",
 	[Key.categories]: "分類",
+	[Key.labNotes]: "實驗專區",
 	[Key.series]: "系列",
 	[Key.seriesCount]: "個系列",
 	[Key.seriesCounts]: "個系列",

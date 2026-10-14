@@ -122,6 +122,12 @@ export const LinkPresets: Record<string, NavBarLink> = {
 		icon: "material-symbols:auto-stories-outline-rounded",
 		pageKey: "series",
 	},
+	LabNotes: {
+		name: i18n(I18nKey.labNotes),
+		url: "/series/lab-notes/",
+		icon: "material-symbols:lock-rounded",
+		pageKey: "series",
+	},
 	About: {
 		name: i18n(I18nKey.about),
 		url: "/about/",
@@ -155,6 +161,7 @@ const defaultNavBarConfig: NavBarConfig = {
 				LinkPresets.Devices,
 				LinkPresets.Games,
 				LinkPresets.Skills,
+				LinkPresets.LabNotes,
 				// 分类/标签入口不进导航菜单（避免菜单项过多），预设已登记指向独立页面，
 				// 需要时取消注释即可
 				// LinkPresets.Categories,

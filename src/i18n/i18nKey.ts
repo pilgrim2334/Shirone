@@ -145,6 +145,7 @@ enum I18nKey {
 
 	tags = "tags",
 	categories = "categories",
+	labNotes = "labNotes",
 	series = "series",
 	seriesCount = "seriesCount",
 	seriesCounts = "seriesCounts",

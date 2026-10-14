@@ -174,14 +174,23 @@ test("系列详情页按 seriesOrder 排序并标注篇号", async ({ page }) =>
 test("系列索引页给出状态、篇数与默认分类", async ({ page }) => {
 	await openSitePage(page, "/series/");
 	await expect(page.locator(".series-index__title")).toHaveText([
-		"Media Embeds",
-		"Markdown Syntax Guide",
+		"NPC1L1 阻断肽研究",
+		"实验专区",
 	]);
 	await expect(page.locator(".series-index__status")).toHaveText([
-		"Ongoing",
-		"Completed",
+		"连载中",
+		"连载中",
 	]);
 	await expect(page.locator(".series-index__card").first()).toContainText(
-		"2 posts",
+		"1 篇文章",
 	);
+	await expect(page.locator(".series-index__card").nth(1)).toContainText(
+		"0 篇文章",
+	);
+	await expect(page.locator(".series-index__card").nth(1)).toContainText(
+		"实验记录",
+	);
+	await expect(
+		page.locator('.series-index__card[href="/series/lab-notes/"]'),
+	).toHaveCount(1);
 });

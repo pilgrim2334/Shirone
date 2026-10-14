@@ -157,6 +157,7 @@ export const id: Translation = {
 
 	[Key.tags]: "Tag",
 	[Key.categories]: "Kategori",
+	[Key.labNotes]: "Catatan Laboratorium",
 	[Key.series]: "Seri",
 	[Key.seriesCount]: "seri",
 	[Key.seriesCounts]: "seri",
