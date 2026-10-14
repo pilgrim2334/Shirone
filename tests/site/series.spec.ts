@@ -173,24 +173,20 @@ test("系列详情页按 seriesOrder 排序并标注篇号", async ({ page }) =>
 
 test("系列索引页给出状态、篇数与默认分类", async ({ page }) => {
 	await openSitePage(page, "/series/");
-	await expect(page.locator(".series-index__title")).toHaveText([
-		"NPC1L1 阻断肽研究",
-		"实验专区",
-	]);
-	await expect(page.locator(".series-index__status")).toHaveText([
-		"连载中",
-		"连载中",
-	]);
-	await expect(page.locator(".series-index__card").first()).toContainText(
-		"1 篇文章",
-	);
-	await expect(page.locator(".series-index__card").nth(1)).toContainText(
-		"0 篇文章",
-	);
-	await expect(page.locator(".series-index__card").nth(1)).toContainText(
-		"实验记录",
-	);
-	await expect(
-		page.locator('.series-index__card[href="/series/lab-notes/"]'),
-	).toHaveCount(1);
+	const expectedSeries = [
+		["npc1l1-research", "NPC1L1 阻断肽研究", "1 篇文章"],
+		["lab-notes", "实验专区", "实验记录"],
+		["daily-lab-notes", "每日实验记录总结", "每日实验记录"],
+		["lab-protocols", "实验 Protocol 收集", "实验 Protocol"],
+	] as const;
+
+	for (const [slug, title, detail] of expectedSeries) {
+		const card = page.locator(
+			`.series-index__card[href="/series/${slug}/"]`,
+		);
+		await expect(card).toHaveCount(1);
+		await expect(card.locator(".series-index__title")).toHaveText(title);
+		await expect(card.locator(".series-index__status")).toHaveText("连载中");
+		await expect(card).toContainText(detail);
+	}
 });
