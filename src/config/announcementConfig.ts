@@ -8,14 +8,14 @@ import { withUserConfig } from "../utils/config-overlay.ts";
 export const announcementConfig: AnnouncementConfig = withUserConfig(
 	"announcement",
 	{
-		title: "今晚的整理",
-		content:
-			"这里是霜折的个人角落：霜蓝色的背景、慢一点的音乐、技术笔记和生活碎片会一起长出来。",
+		title: "公告",
+		content: "欢迎来到我的博客。这里记录一些学习与生活。",
 		closable: true,
+		closeDuration: 86400,
 		link: {
 			enable: true,
-			text: "阅读 NPC1L1 项目入门地图",
-			url: "/posts/npc1l1-project-onboarding/",
+			text: "关于我",
+			url: "/about/",
 			external: false,
 		},
 	},
