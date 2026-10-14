@@ -152,7 +152,6 @@ export const ko: Translation = {
 
 	[Key.tags]: "태그",
 	[Key.categories]: "카테고리",
-	[Key.labNotes]: "실험 노트",
 	[Key.series]: "시리즈",
 	[Key.seriesCount]: "시리즈",
 	[Key.seriesCounts]: "시리즈",

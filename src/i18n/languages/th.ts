@@ -144,7 +144,6 @@ export const th: Translation = {
 
 	[Key.tags]: "ป้ายกำกับ",
 	[Key.categories]: "หมวดหมู่",
-	[Key.labNotes]: "บันทึกการทดลอง",
 	[Key.series]: "ซีรีส์",
 	[Key.seriesCount]: "ซีรีส์",
 	[Key.seriesCounts]: "ซีรีส์",

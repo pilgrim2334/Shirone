@@ -152,7 +152,6 @@ export const ja: Translation = {
 
 	[Key.tags]: "タグ",
 	[Key.categories]: "カテゴリ",
-	[Key.labNotes]: "実験ノート",
 	[Key.series]: "シリーズ",
 	[Key.seriesCount]: "シリーズ",
 	[Key.seriesCounts]: "シリーズ",

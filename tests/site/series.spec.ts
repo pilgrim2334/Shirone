@@ -175,15 +175,12 @@ test("系列索引页给出状态、篇数与默认分类", async ({ page }) => 
 	await openSitePage(page, "/series/");
 	const expectedSeries = [
 		["npc1l1-research", "NPC1L1 阻断肽研究", "1 篇文章"],
-		["lab-notes", "实验专区", "实验记录"],
 		["daily-lab-notes", "每日实验记录总结", "每日实验记录"],
 		["lab-protocols", "实验 Protocol 收集", "实验 Protocol"],
 	] as const;
 
 	for (const [slug, title, detail] of expectedSeries) {
-		const card = page.locator(
-			`.series-index__card[href="/series/${slug}/"]`,
-		);
+		const card = page.locator(`.series-index__card[href="/series/${slug}/"]`);
 		await expect(card).toHaveCount(1);
 		await expect(card.locator(".series-index__title")).toHaveText(title);
 		await expect(card.locator(".series-index__status")).toHaveText("连载中");

@@ -155,7 +155,6 @@ export const tr: Translation = {
 
 	[Key.tags]: "Taglar",
 	[Key.categories]: "Katagoriler",
-	[Key.labNotes]: "Laboratuvar Notları",
 	[Key.series]: "Seri",
 	[Key.seriesCount]: "seri",
 	[Key.seriesCounts]: "seri",

@@ -155,7 +155,6 @@ export const es: Translation = {
 
 	[Key.tags]: "Etiquetas",
 	[Key.categories]: "Categorías",
-	[Key.labNotes]: "Notas de laboratorio",
 	[Key.series]: "Series",
 	[Key.seriesCount]: "serie",
 	[Key.seriesCounts]: "series",

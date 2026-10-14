@@ -156,7 +156,6 @@ export const vi: Translation = {
 
 	[Key.tags]: "Thẻ",
 	[Key.categories]: "Danh mục",
-	[Key.labNotes]: "Ghi chép thí nghiệm",
 	[Key.series]: "Loạt bài",
 	[Key.seriesCount]: "loạt bài",
 	[Key.seriesCounts]: "loạt bài",
