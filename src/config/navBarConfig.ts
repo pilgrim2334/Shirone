@@ -8,6 +8,7 @@ import { devicesConfig } from "@/config/devicesConfig";
 import { friendsConfig } from "@/config/friendsConfig";
 import { gamesConfig } from "@/config/gamesConfig";
 import { momentsConfig } from "@/config/momentsConfig";
+import { privateSpaceConfig } from "@/config/privateSpaceConfig";
 import { projectsConfig } from "@/config/projectsConfig";
 import { seriesConfig } from "@/config/seriesConfig";
 import { skillsConfig } from "@/config/skillsConfig";
@@ -125,8 +126,14 @@ export const LinkPresets: Record<string, NavBarLink> = {
 	LabNotes: {
 		name: i18n(I18nKey.labNotes),
 		url: "/series/lab-notes/",
-		icon: "material-symbols:lock-rounded",
+		icon: "material-symbols:science-outline-rounded",
 		pageKey: "series",
+	},
+	PrivateSpace: {
+		name: privateSpaceConfig.title,
+		url: "/private/",
+		icon: "material-symbols:shield-lock-outline-rounded",
+		pageKey: "post",
 	},
 	About: {
 		name: i18n(I18nKey.about),
@@ -162,6 +169,7 @@ const defaultNavBarConfig: NavBarConfig = {
 				LinkPresets.Games,
 				LinkPresets.Skills,
 				LinkPresets.LabNotes,
+				LinkPresets.PrivateSpace,
 				// 分类/标签入口不进导航菜单（避免菜单项过多），预设已登记指向独立页面，
 				// 需要时取消注释即可
 				// LinkPresets.Categories,
@@ -202,6 +210,7 @@ const unavailableFeatureRoutes: ReadonlySet<string> = new Set([
 	...(timelineConfig.enable ? [] : ["/timeline"]),
 	...(aboutConfig.enable ? [] : ["/about"]),
 	...(seriesConfig.enable ? [] : ["/series"]),
+	...(privateSpaceConfig.enable ? [] : ["/private"]),
 ]);
 
 /**

@@ -59,6 +59,7 @@ export {
 export { LinkPresets, navBarConfig } from "./navBarConfig";
 export { permalinkConfig } from "./permalinkConfig";
 export { POST_CARD_MIN_WIDTH, postListConfig } from "./postListConfig";
+export { privateSpaceConfig } from "./privateSpaceConfig";
 export { profileConfig } from "./profileConfig";
 export { projectsConfig } from "./projectsConfig";
 export { seriesConfig } from "./seriesConfig";

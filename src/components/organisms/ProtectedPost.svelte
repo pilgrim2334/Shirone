@@ -11,10 +11,16 @@ let {
 	payload,
 	scope,
 	hint = "",
+	title = "",
+	description = "",
+	headingIcon = "",
 }: {
 	payload: ProtectedPayload;
 	scope: string;
 	hint?: string;
+	title?: string;
+	description?: string;
+	headingIcon?: string;
 } = $props();
 
 let content = $state<string | null>(null);
@@ -48,6 +54,9 @@ $effect(() => {
 			{payload}
 			{scope}
 			{hint}
+			{title}
+			{description}
+			{headingIcon}
 			onunlocked={handleUnlocked}
 		/>
 	</div>
