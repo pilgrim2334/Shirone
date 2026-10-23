@@ -42,7 +42,7 @@ draft: false
 这些黑色碎片可能来自状态较差或死亡的细胞，但仅凭本次镜下观察尚不能确认其来源，也不能完全排除污染或培养体系中其他颗粒物的可能。后续需要结合培养基变化、污染检测和连续镜下观察进一步判断。
 
 <!-- 将显微镜图片放入 public/images/experiments/2026-10-18/ 后，取消下一行注释并修改文件名。 -->
-<!-- ![RH7777 NPC1L1-EGFP 稳转株复苏后的细胞状态](/images/experiments/2026-10-18/rh7777-npc1l1-egfp-recovery.jpg) -->
+![RH7777 NPC1L1-EGFP 稳转株复苏后的细胞状态](/images/experiments/2026-10-18/rh7777-npc1l1-egfp-recovery.jpg)
 
 ## 问题分析
 
