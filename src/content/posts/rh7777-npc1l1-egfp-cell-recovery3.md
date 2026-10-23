@@ -48,8 +48,7 @@ draft: false
 - 与 10 月 18 日的图像相比，本视野中体积较大的深色碎片相对少见，画面背景也更干净；
 - 细胞整体密度仍不高，当前状态尚不足以判断细胞已经稳定恢复。
 
-<!-- 请将本次显微镜图片保存为 public/images/experiments/2026-10-23/rh7777-npc1l1-egfp-fast-thaw.jpg 后取消下一行注释。 -->
-<!-- ![37°C 水浴快速解冻后的 RH7777 NPC1L1-EGFP 细胞次日状态](/images/experiments/2026-10-23/rh7777-npc1l1-egfp-fast-thaw.jpg) -->
+![37°C 水浴快速解冻后的 RH7777 NPC1L1-EGFP 细胞次日状态](/images/experiments/2026-10-23/rh7777-npc1l1-egfp-fast-thaw.jpg)
 
 ## 与前两组的初步比较
 
